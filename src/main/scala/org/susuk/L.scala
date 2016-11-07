@@ -19,6 +19,7 @@ object L extends App {
 
 
   import scala.collection.mutable.ListBuffer
+
   val ls = ListBuffer[Int]()
   ls += 2
   ls += 3
@@ -48,4 +49,31 @@ object L extends App {
   println(totalCost)
   println(s"The total meal cost is ${Math.round(totalCost)} dollars.")
   // The total meal cost is 23 dollars.
+
+  val Array(aa, bb) = "1 2".split(" ")
+  print(aa)
+  print(" ")
+  print(bb)
+
+  val Array(aaa, _, bbb) = "1 2".toCharArray
+  print(aaa)
+  print(" ")
+  print(bbb)
+
+  println()
+
+  "abc".toList match {
+    case List(x, y, z) =>
+      println(x)
+      println(y)
+      println(z)
+    case x :: y =>
+      println("blah")
+      println(x)
+      println(y)
+    //      println(z)
+
+
+  }
+
 }
